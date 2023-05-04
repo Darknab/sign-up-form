@@ -7,13 +7,11 @@
     src: url(fonts/Norse-Bold.otf); 
 }
 
-
-
 body {
     margin: 0; 
     font-family: Helvetica, sans-serif;
     background-color: rgb(235, 238, 239);
-
+    font-size: .875rem;
 }
 
 a:hover,
@@ -30,7 +28,7 @@ button:hover {
 
 .title {
     position: absolute;
-    top: 30%;
+    top: 20%;
     background-color: hsla(0, 0%, 0%, .5);
     width: 100%;
     display: flex;
@@ -72,11 +70,9 @@ button:hover {
     padding: 2rem 3rem;
 }
 
-.grey {
-}
-
 .intro p {
     font-weight: 600;
+    font-size: 1.2rem;
 }
 
 .italic {
@@ -106,6 +102,11 @@ button:active {
 
 .informations {
     background-color: white;
+    
+}
+
+.informations .container {
+    padding: 1rem 3rem;
 }
 label,
 input {
@@ -127,9 +128,19 @@ input {
     width: 250px;
     border: 1px solid #E5E7EB;
     border-radius: 5px;
-    box-shadow: 5px 2px 10px #E5E7EB;
     height: 2rem;
 
+}
+
+input:focus,
+input:focus:required {
+    outline: none;
+    border: 1px solid blue;
+    box-shadow: 5px 2px 10px #E5E7EB;
+}
+
+input:invalid {
+    border-color: red;
 }
 
 @media (min-width: 750px) {
